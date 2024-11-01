@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> NHL Quiz </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" >
+                <div class="col-md-6 mx-auto p-4">
+        <h1>National Hockey League Quiz</h1>
+        <p>How much do you know about the National Hockey League? Take this quiz to find out. Quiz answers and more information can be found in <a href="https://en.wikipedia.org/wiki/National_Hockey_League">this Wikipedia article.</a></p>
+                    <form>
+
+                        <div class="mb-3">
+                            <label for="teamNum" class="form-label">How many teams are in the NHL?
+                            <input type="number" id="teamNum" name="teamNum"
+                            class="form-control">
+                            </label>
+                        </div>
+
+                        <div class="mb-3">  
+                            <label class="form-label">Select the names of the Original Six teams.</label>
+                            <div>
+                                <label>
+                                <input type="checkbox" name="originalSix"
+                                value="Bruins"
+                                class="form-check-label"> Boston Bruins</label>
+                            </div> 
+                            <div>
+                                <label>
+                                <input type="checkbox" name="originalSix" 
+                                value="Maple Leafs" 
+                                class="form-check-label"> Toronto Maple Leafs</label>
+                            </div> 
+                            <div>
+                                <label>
+                                <input type="checkbox" name="originalSix" value="Red Wings" 
+                                class="form-check-label"> Detroit Red Wings</label>
+                            </div> 
+                            <div>
+                                <label>
+                                <input type="checkbox" name="originalSix" value="Canadiens" 
+                                class="form-check-label"> Montreal Canadiens</label>
+                            </div> 
+                            <div>
+                                <label>
+                                <input
+                                type="checkbox" name="originalSix" value="Rangers" 
+                                class="form-check-label">
+                                 New York Rangers</label>
+                            </div> 
+                            <div>
+                                <label>
+                                <input type="checkbox" name="originalSix" value="Blackhawks" class="form-check-label">
+                                Chicago Blackhawks</label>
+                            </div> 
+                            <div>
+                                <label>
+                                <input type="checkbox" name="originalSix" value="Panthers"
+                                class="form-check-label">
+                                 Florida Panthers</label>
+                            </div> 
+                        </div>
+
+                        <div class="mb-3">
+                             <label class="form-label">What year was the NHL official started?</label>
+                             <div>
+                                <label>
+                                    <input type="radio" name="year"
+                                    value="1917" class="form-check-label"> 1917
+                                </label>
+                                </div>
+                                <div>
+                                    <label>
+                                        <input type="radio" name="year" value="1924" 
+                                        class="form-check-label"> 1924
+                                    </label>
+                                 </div>
+                                 <div>
+                                    <label>
+                                         <input type="radio" name="year" value="1926" 
+                                         class="form-check-label"> 1926
+                                    </label>
+                                 </div>
+                                <div>
+                                    <label>
+                                        <input type="radio" name="year" value="1942" class="form-check-label"> 1942
+                                    </label>
+                                 </div>
+                        
+                        <div class="my-3">
+                                <label for="ChampName" class="form-label">Which team won the Stanley Cup in the 2023-2024 season?</label>
+                                <input type="text" id="ChampName"
+                                name="ChampName"
+                                class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="penalties" class="form-label"> What is the penalty for one player fighting in the NHL?</label>
+                            <select name="penalties" id="penalties" class="form-select">
+                                <option selected>Choose...</option>
+                                <option value="minor">Minor</option>
+                                <option value="ejection">Ejection</option>
+                                <option value="major">Major</option>
+                                <option value="none">No Penalty</option>
+                                <option value="loseGoal">The player's team loses a goal.</option>
+                                <option value="emptyNet">The player's goalie has to leave the net for two minutes.</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="countryCount"
+                            class="form-label"> What are the two countries that have teams in the NHL?</label>
+                            <textarea 
+                            name="countryCount" 
+                            id="countryCount"
+                            rows="2"
+                            class="form-control">
+                            </textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <button type="button"
+                            class="btn btn-success me-2" value="Submit"> Submit Answers
+                            <button type="button" 
+                            class="btn btn-secondary"
+                            value="Reset"> Start Over
+                        </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
